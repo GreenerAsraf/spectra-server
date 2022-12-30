@@ -33,7 +33,7 @@ async function run() {
     const result = await userCollection.insertOne(user);
     console.log(`A document was inserted with the _id: ${result}`);
 
-    app.get('/comments', async (req, res) =>{
+    app.get('/create', async (req, res) =>{
       const query = {};
       const comments = await commentCollection.find(query).toArray();
       res.send(comments)
