@@ -55,7 +55,7 @@ async function run() {
 run().catch(err => console.log(err) );
 
 app.get('/', (req, res) => {
-  res.send('Spectra server is running')
+  res.send('Spectra server is running on the root route')
 })
 
 
